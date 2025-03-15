@@ -1,0 +1,21 @@
+import React from "react";
+
+const CarouselSlide = ({imgSrc, primaryText, secondaryText, alt}) => {
+  return (
+    <>
+      <div className="bg-white rounded-lg shadow-md">
+        <img
+          src={imgSrc}
+          alt={alt}
+          className="w-full h-96 object-cover rounded-lg"
+        />
+        <h2 className="text-xl font-semibold my-2">{ primaryText }</h2>
+        <p className="text-gray-600">
+          { secondaryText }
+        </p>
+      </div>
+    </>
+  );
+};
+
+export default CarouselSlide;
