@@ -15,7 +15,7 @@ function App() {
   return ( 
     <Router>
       <Header />
-      <main className='flex space-between'>
+      <main className='flex space-between bg-blue-100'>
         <SideBar />
         <Routes>
           <Route path="/" element={<HomePage />} />

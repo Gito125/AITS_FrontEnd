@@ -14,10 +14,6 @@ export default function header() {
           <h2 className='font-bold p-2'>AITS</h2>
         </div>
       
-
-        {/*Search bar*/}
-        <input type="text" className='border-2 border-gray-300 p-2 w-64 rounded-3xl text-black outline-none' placeholder='Search'></input>
-
         {/*Message*/}
         <h1 className='text-3xl'>ACADEMIC ISSUE TRACKING SYSTEM</h1>
 

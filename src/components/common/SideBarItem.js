@@ -8,7 +8,7 @@ const SideBarItem = ({Icon, text}) => {
               <Icon/>
       
             </div>
-            <p className='font-semibold text-xl ml-3'>{ text }</p>
+            <p className='font-semibold text-lg ml-3'>{ text }</p>
           </div>
     </div>
   )
