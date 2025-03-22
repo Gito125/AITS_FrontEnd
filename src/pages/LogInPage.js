@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const LoginPage = () => {
   return (
-    <div class="bg-sky-100 flex justify-center items-center h-screen">
+    <div class="bg-sky-100 container flex justify-center items-center h-screen">
       {/* Left: Image */}
       <div class="w-1/2 h-screen hidden lg:block">
         <img src={AITS_Logo} alt="AITS Logo" class="object-cover w-full h-full"/>
@@ -16,16 +16,16 @@ const LoginPage = () => {
         {/* Email Input */}
         <div class="mb-4 bg-sky-100">
           <label for="email" class="block text-gray-600">Email</label>
-          <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" autocomplete="off"/>
+          <input required type="email" id="email" name="email" class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" autocomplete="off"/>
         </div>
         {/* Password Input */}
         <div class="mb-4">
           <label for="password" class="block text-gray-800">Password</label>
-          <input type="password" id="password" name="password" class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" autocomplete="off"/>
+          <input required type="password" id="password" name="password" class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" autocomplete="off"/>
         </div>
         {/* Remember Me Checkbox */}
         <div class="mb-4 flex items-center">
-          <input type="checkbox" id="remember" name="remember" class="text-red-500"/>
+          <input required type="checkbox" id="remember" name="remember" class="text-red-500"/>
           <label for="remember" class="text-green-900 ml-2">Remember Me</label>
         </div>
         {/* Forgot Password Link */}

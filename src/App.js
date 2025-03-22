@@ -12,17 +12,24 @@ import IssueForm from './components/issues/IssueForm';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
+  const [darkMode, setDarkMode] = React.useState(false);
+  
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+  };
+
+
   return ( 
     <Router>
       <Header />
       <main className='flex space-between bg-blue-100'>
-        <SideBar />
+        <SideBar darkMode={darkMode}/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/help" element={<HelpPage />} />
           <Route path="/notifications" element={<NotificationsPage />} />
           <Route path="/reports" element={<ReportsPage />} />
-          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/settings" element={<SettingsPage darkMode={darkMode} toggleTheme={toggleTheme}/>} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/add-issue" element={<IssueForm />} />

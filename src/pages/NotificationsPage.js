@@ -20,16 +20,10 @@ const Notifications = () => {
       id: 3,
       message: 'Your issue "Conflicting exam schedule " has been updated.',
       date: "15/03/2025",
-      type: "Issue Update",
-    },
-    {
-      id: 4,
-      message: 'Your issue "Missing exam marks " has been updated.',
-      date: "18/03/2025",
-      type: "Issue Update",
+      type: "Issue Upload",
     },
   ]);
-
+ 
   return (
     //Displaying the notifications components
     <div className="container mx-auto p-6 bg-gray-50">
@@ -41,11 +35,11 @@ const Notifications = () => {
         {notifications.map((notification) => (
           <div
             key={notification.id}
-            className={`p-4 border-l-4 rounded-lg ${
-              notification.type === "Issue Update"
-                ? "bg-blue-100 border-blue-500"
-                : "bg-yellow-100 border-yellow-500"
-            }`}
+            className={`p-4 border-l-4 rounded-lg 
+              ${notification.type === "Issue Update" ? "bg-blue-100 border-blue-500" : 
+              notification.type === "Comment" ? "bg-yellow-100 border-yellow-500" :
+              notification.type === "Issue Upload" ? "bg-gray-200 border-green-500" : ""}
+            `}
           >
             {/*Displaying the notification type */}
             <p className="font-medium text-gray-700">{notification.type}</p>
