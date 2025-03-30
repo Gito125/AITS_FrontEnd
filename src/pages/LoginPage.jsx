@@ -1,5 +1,5 @@
 import React from 'react'
-import AITS_Logo from '../components/images/logo2.jpg'
+import AITS_Logo from '../assets/images/logo2.jpg'
 import { Link } from 'react-router-dom'
 
 const LoginPage = () => {

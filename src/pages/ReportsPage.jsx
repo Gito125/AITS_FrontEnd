@@ -181,7 +181,7 @@ Each issue contains information about:
           onChange={handleSearchInput}
           type="text"
           placeholder="Search Issues..."
-          className="px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-black  border-gray-300 p-2 w-664  outline-none  "
+          className="px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-black  border-gray-300 p-2 outline-none  "
         />
       </div>
       <div className="overflow-x-auto bg-white shadow-md rounded-lg">
